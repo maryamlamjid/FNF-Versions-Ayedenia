@@ -61,6 +61,11 @@ class HealthBar extends FlxSpriteGroup
 	{
 		leftBar.color = left;
 		rightBar.color = right;
+		if(SONG.song == 'philly-nice')
+		{
+			leftBar.color = FlxColor.RED;
+			rightBar.color = FlxColor.GREEN; //weeeeeee 
+		}
 	}
 
 	public function updateBar()
